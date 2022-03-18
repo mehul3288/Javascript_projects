@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(83, 43, 43);
+    text-align: center;
+}
+
+#board {
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+
+.row {
+    font-size: 0px;
+}
+
+.col {
+    border-left: 2px solid blanchedalmond;
+    border-top: 2px solid blanchedalmond;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(192, 186, 186);
+    display: inline-block;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    vertical-align: top;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 40px;
+}
+
+.valid {
+    background-color: grey;
+}
+
+.bomb {
+    background-color: grey;
+}
+
+.revealed {
+    background-color: #eee;
+    color: black;
+}
+
+.col.valid:hover {
+    background-color: rgb(90, 86, 86);
+}
+
+.col.valid.revealed:hover {
+    background-color: white;
+}
+
+.row:last-child .col {
+    border-bottom: none;
+}
+
+.row .col:last-child {
+    border-right: none;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(195, 195, 195);
+    color: black;
+    font-weight: bolder;
+    border-radius: 20px 20px 20px 20px;
+}
+
+marquee {
+    background-color: seagreen;
+    padding-top: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+#flagsTag {
+    color: white;
+}
