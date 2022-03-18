@@ -1,0 +1,42 @@
+If you guess the letter wrong it starts building a guy
+we have random words which is an array of words
+and if user enter a letter and if it is present in that word than it should appear at its position
+and if not it shoud start building a man
+and if once a letter is used it shouln't be used again so we have to create a notfication for that 
+and the wrong letter should appear on the screen 
+
+HangMan:
+'<circle cx="190" cy="130" r="30" stroke="white" stroke-width="3" fill="rgb(34, 48, 75)";/> <line x1="190" y1="160" x2="190" y2="250" style="stroke:white;stroke-width:2" /> <line x1="190" y1="190" x2="140" y2="140" style="stroke:white;stroke-width:2" /> <line x1="190" y1="190" x2="240" y2="140" style="stroke:white;stroke-width:2" /> <line x1="190" y1="250" x2="140" y2="300" style="stroke:white;stroke-width:2" /> <line x1="190" y1="250" x2="250" y2="300" style="stroke:white;stroke-width:2" />'
+
+var smallWords=["rain","apple","bye","hello","boy","bat"];
+var mediumWords=["action","common","button","account","capital","fitness"];
+var bigWords=["abandon","cricket","football","quadratic","birthday","whatsapp","facebook","programming"]
+
+localStorage base values=score:0;
+highScore:0
+flag:false
+
+//////// Old Code to check wrong inputs////////
+// if (
+//   !randomWords[index].includes(e.target.textContent) &&
+//   !e.target.classList.contains("disableKeys")
+// ) {
+//   console.log("hello");
+//   hangManArea.innerHTML += human[count];
+//   count++;
+//   if (count == human.length) {
+//     gameOver();
+//   }
+// }
+
+
+// letterArray.forEach((el) => {
+    //   if (e.target.textContent === el.getAttribute("id").toLowerCase()) {
+    //     // if (el.innerHTML === "") {
+    //     flag = true;
+    //     rightInputs.push(e.target.textContent);
+    //     // }
+    //     el.innerHTML = el.getAttribute("id");
+    //     el.classList.add("revealed");
+    //   }
+    // });

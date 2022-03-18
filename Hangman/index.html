@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+      <!-- <div class="notify">
+          <h4>You have already entered this letter</h4>
+      </div> -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Hello</p>
+          <button class="RestartBtn">Restart</button>
+        </div>
+      
+    </div>
+    <div class="header-container">
+      <h1>Hangman</h1>
+      <img src="../images/hangman2.png" alt="hangman">
+    </div>
+    <br>
+    <h6>Find the hidden word---Enter a Letter</h5>
+      <div class="score-container">
+        <h3 class="highscore">High Score:</h3>
+        <h3 class="score">Score:</h3>
+      </div>
+    <div class="container">
+      
+        <svg class="hangManArea" height="400" width="300">
+          <line x1="60" y1="60" x2="60" y2="330" style="stroke:white;stroke-width:2" /> <line x1="20" y1="330" x2="100" y2="330" style="stroke:white;stroke-width:2" /> <line x1="60" y1="60" x2="190" y2="60" style="stroke:white;stroke-width:2" /> <line x1="190" y1="60" x2="190" y2="100" style="stroke:white;stroke-width:2" />
+        </svg>
+        <!-- <div class="wrongInputs"></div> -->
+      
+      <div class="inner-container2">
+        <div class="wordInputArea"></div>
+        <button class="hintBtn">Use Hint💡</button>
+        <button class="ff">50/50</button>
+      </div>
+      <div class="keys">
+
+      </div>
+      
+    </div>
+    
+  </body>
+  <script src="script.js"></script>
+</html>

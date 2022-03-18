@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.row {
+  margin-top: 2px;
+  height: 10px;
+  background-color: red;
+  font-size: 10px;
+}
+
+.row-animate {
+  animation-name: progress;
+  animation-duration: 0.5s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0px;
+  }
+  100% {
+  }
+}
+
+.row:first-child {
+  margin-top: 0px;
+}
+
+.btn {
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: red;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.currentSelected {
+  background-color: green;
+}
